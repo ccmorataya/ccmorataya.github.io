@@ -20,3 +20,6 @@
         </table>
     </div>
 </div>
+
+:video_game:
+:game_die:
