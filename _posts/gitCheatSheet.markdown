@@ -87,3 +87,18 @@ git revert --no-commit <commit> # can be HEAD~x
 git ckeckout <destinyBranch> # i.e. master
 git merge <originBranch> # i.e. develop
 ```
+
+###  Abort the merge
+``` sh
+git merge --abort
+```
+
+### Tag the last commit (actual commit)
+``` sh
+git tag <tagID> # i.e. "v1.1.0"
+```
+
+### Tag a specific commit
+``` sh
+git tag <tagID> <commitHash>
+```
