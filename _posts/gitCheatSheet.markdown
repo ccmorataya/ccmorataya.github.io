@@ -102,3 +102,9 @@ git tag <tagID> # i.e. "v1.1.0"
 ``` sh
 git tag <tagID> <commitHash>
 ```
+### Pull the repository ordering the commits local and remote to avoid an extra commit
+``` sh
+git pull --rebase <origin> <branch>
+# i.e. (the most usual)
+# git pull --rebase origin master
+```
