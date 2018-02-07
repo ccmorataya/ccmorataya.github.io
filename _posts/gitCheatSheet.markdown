@@ -102,9 +102,23 @@ git tag <tagID> # i.e. "v1.1.0"
 ``` sh
 git tag <tagID> <commitHash>
 ```
+
 ### Pull the repository ordering the commits local and remote to avoid an extra commit
 ``` sh
 git pull --rebase <origin> <branch>
 # i.e. (the most usual)
 # git pull --rebase origin master
+```
+
+### Work in other branch and set as the master (discarding the actual master)
+``` sh
+# Warning! Destructive
+git branch <branch_name>    # i.e. git branch new_master
+git checkout <branch>  # i.e. git checkout new_master
+
+# this two ^ can be simplified in one command
+git checkout -b <branch_name>   # i.e. git checkout -b new_master
+#
+git branch -D <master>
+git branch -mv <Checkouted_branch> <new_branch_name> # i.e. git branch -mv new_master master
 ```
