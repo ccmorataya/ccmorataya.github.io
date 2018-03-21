@@ -122,3 +122,13 @@ git checkout -b <branch_name>   # i.e. git checkout -b new_master
 git branch -D <master>
 git branch -mv <Checkouted_branch> <new_branch_name> # i.e. git branch -mv new_master master
 ```
+
+### Untrack but keep the file
+``` sh
+git update-index --assume-unchanged FILE_NAME
+```
+
+### Track a file ignored by the previous command
+``` sh
+git update-index --no-assume-unchanged FILE_NAME
+```
