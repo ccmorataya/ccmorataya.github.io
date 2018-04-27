@@ -132,3 +132,8 @@ git update-index --assume-unchanged FILE_NAME
 ``` sh
 git update-index --no-assume-unchanged FILE_NAME
 ```
+
+### Undo last commit locally and keep tha changes in the stage
+``` sh
+git reset HEAD~
+```
