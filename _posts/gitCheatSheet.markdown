@@ -137,3 +137,8 @@ git update-index --no-assume-unchanged FILE_NAME
 ``` sh
 git reset HEAD~
 ```
+
+### Delete remote branch
+``` sh
+git push <remote_name> --delete <branch_name>   # i.e. git push origin --delete development
+```
