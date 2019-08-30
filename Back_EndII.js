@@ -717,7 +717,7 @@ function ganaste(){
     for (i=0; i<5; i++) contraseña +=caracteres.charAt(Math.floor(Math.random()*caracteres.length)); 
     console.log(contraseña)
     modal2.innerHTML=contraseña;
-    modal2.addEventListener("click",function(){ location.href = "Game.html";});
+    modal2.addEventListener("click",function(){ location.href = "Index.html";});
     var a = document.getElementById("Cont");
     var padre = a.parentNode;
     padre.removeChild(a);
